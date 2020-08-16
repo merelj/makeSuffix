@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "amd",
+    "module": "commonjs",
     "declaration": true,
-    "sourceMap": true,
-    "outFile": "./dist/makeSuffix.js",
-    "rootDir": "./src",
+    "outDir": "./lib",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -14,7 +12,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "removeComments": true
+    "removeComments": false
   },
-  "exclude": ["node_modules", "**/*.test.ts"]
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.test.ts", "lib"]
 }
